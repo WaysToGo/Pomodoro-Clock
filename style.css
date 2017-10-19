@@ -9,10 +9,9 @@ button {
     border: 1px solid transparent;
     color: #ffffff;
     font-weight: bold;
-    -webkit-border-radius: 20px;
     border-radius: 20px;
     -webkit-transition: all 0.3s ease-in-out;
-    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
 }
 
@@ -38,6 +37,8 @@ header{
     width:250px;
     border-radius:50%;
     background: #009ac9;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     margin: auto;
     display: 1;
@@ -62,18 +63,23 @@ span.time{
     grid-row: 2;
 }
 .buttons{
+    display:-webkit-box;
+    display:-ms-flexbox;
     display:flex;
     grid-column: 3;
     grid-row: 3;
 }
 .sessionTime{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     grid-column: 2;
     grid-row: 1;
 }
 .breakTime{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     grid-column: 4;
     grid-row: 1;   
 }
-
