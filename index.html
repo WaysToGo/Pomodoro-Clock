@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.5/angular.min.js"></script>
+    <script src="app.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Pomodoro Clock</title>
+</head>
+
+<body>
+    <header>
+        <h1>Pomodoro Clock</h1>
+    </header>
+    <div ng-app="clock" ng-controller="clockController">
+        <div class="container">
+            <div class="sessionTime">
+                <button ng-click="removeSessionTime()">-</button>
+                <p>Session Time:</p>
+                <p class="simple">{{sessionTime}}</p>
+                <button ng-click="addSessionTime()">+</button>
+
+            </div>
+            <div class="breakTime">
+                <button ng-click="removeBreakTime()">-</button>
+                <p>Break Time:</p>
+                <p>{{breakTime}}</p>
+                <button ng-click="addBreakTime()">+</button>
+
+            </div>
+            <div class="countdown">
+                <span class="sessionName">{{sessionType}}</span>
+                <span class="time">{{time}}</span>
+            </div>
+            <div class="buttons">
+                <button ng-click="startSession()">Start</button>
+                <button ng-click="stop()">Stop</button>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

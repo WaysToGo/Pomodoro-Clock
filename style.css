@@ -1,0 +1,82 @@
+*{
+    font-weight: bold;
+}
+button {
+    margin: 20px auto;
+    font-size: 1.0rem;
+    padding: 10px;
+    background-color: #009ac9;
+    border: 1px solid transparent;
+    color: #ffffff;
+    font-weight: bold;
+    -webkit-border-radius: 20px;
+    border-radius: 20px;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
+button:hover {
+    background-color: #ffffff;
+    color: #009ac9;
+    border-color: #009ac9;
+}
+button:active{
+    background-color: #5fcfeb;
+}
+header{
+    text-align: center;
+}
+.container{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+   
+}
+
+.countdown{
+    height:250px;
+    width:250px;
+    border-radius:50%;
+    background: #009ac9;
+    display: flex;
+    margin: auto;
+    display: 1;
+}
+span{
+    margin: auto;
+    
+}
+span.sessionName{
+    font-size: 25px;
+    font-weight: bold;
+   
+} 
+
+span.time{
+    
+    font-size: 25px;
+    font-weight: bold;
+}
+.countdown{
+    grid-column: 3;
+    grid-row: 2;
+}
+.buttons{
+    display:flex;
+    grid-column: 3;
+    grid-row: 3;
+}
+.sessionTime{
+    display: flex;
+    grid-column: 2;
+    grid-row: 1;
+}
+.breakTime{
+    display: flex;
+    grid-column: 4;
+    grid-row: 1;   
+}
+
+@media screen {
+    
+}
